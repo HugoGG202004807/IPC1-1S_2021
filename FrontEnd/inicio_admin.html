@@ -30,6 +30,10 @@
     
     <!--====== Style CSS ======-->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     
 </head>
 
@@ -79,7 +83,7 @@
 
                         <div class="navbar-btn d-none d-sm-inline-block">
                             <ul>
-                                <li><a class="solid" href="#">Cerrar sesion</a></li>
+                                <li><a class="solid" href="../FrontEnd/login/login.html">Cerrar sesion</a></li>
                             </ul>
                         </div>
                     </nav> <!-- navbar -->
@@ -200,10 +204,217 @@
                 <i class="lni lni-arrow-right"></i>
             </a>
         </div>
-    </section>
+    </section><br><br><br><br>
 
-    <!--====== SLIDER PART ENDS ======-->
-    
+
+
+<!-- vista general de medicos -->
+<div class="container">
+        <div class="table-responsive">
+            <div class="table-wrapper">
+                <div class="table-title">
+                    <div class="row">
+                        <div class="col-sm-8"><h2>Vista general <b>medicos</b></h2></div>
+                        
+                    </div>
+                </div>
+                <table class="table table-striped table-hover table-bordered">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name <i class="fa fa-sort"></i></th>
+                            <th>Apellido</th>
+                            <th>Especialidad <i class="fa fa-sort"></i></th>                            
+                            <th>Opciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td>1</td>
+                            <td>Hugo</td>
+                            <td>Giron</td>
+                            <td>cualquier campo</td>
+                            <td>
+                                <a href="#" class="view" title="Ver" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>
+                                <a href="#" class="edit" title="Editar" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                <a href="#" class="delete" title="Eliminar" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                            </td>
+                        </tr>
+                       
+                    </tbody>
+                </table><br>
+                <div class="clearfix">
+                    
+                    <ul class="pagination">
+                        <li class="page-item disabled"><a href="#"><i class="fa fa-angle-double-left"></i></a></li>
+                        <li class="page-item active"><a href="#" class="page-link">1</a></li>
+                        <li class="page-item"><a href="#" class="page-link">2</a></li>
+                        <li class="page-item "><a href="#" class="page-link">3</a></li>
+                        <li class="page-item"><a href="#" class="page-link">4</a></li>
+                        <li class="page-item"><a href="#" class="page-link">5</a></li>
+                        <li class="page-item"><a href="#" class="page-link"><i class="fa fa-angle-double-right"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>        
+    </div><br><br><br><br>
+<!-- vista general de medicos- fin -->
+
+<!-- vista general de enfermeras -->
+<div class="container">
+    <div class="table-responsive">
+        <div class="table-wrapper">
+            <div class="table-title">
+                <div class="row">
+                    <div class="col-sm-8"><h2>Vista general <b>enfermeras</b></h2></div>
+                    
+                </div>
+            </div>
+            <table class="table table-striped table-hover table-bordered">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name <i class="fa fa-sort"></i></th>
+                        <th>Apellido</th>                                                    
+                        <th>Opciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>1</td>
+                        <td>Katalina</td>
+                        <td>Hernandez</td>                        
+                        <td>
+                            <a href="#" class="view" title="Ver" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>
+                            <a href="#" class="edit" title="Editar" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                            <a href="#" class="delete" title="Eliminar" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                        </td>
+                    </tr>
+                   
+                </tbody>
+            </table><br>
+            <div class="clearfix">
+                
+                <ul class="pagination">
+                    <li class="page-item disabled"><a href="#"><i class="fa fa-angle-double-left"></i></a></li>
+                    <li class="page-item active"><a href="#" class="page-link">1</a></li>
+                    <li class="page-item"><a href="#" class="page-link">2</a></li>
+                    <li class="page-item"><a href="#" class="page-link">3</a></li>
+                    <li class="page-item"><a href="#" class="page-link">4</a></li>
+                    <li class="page-item"><a href="#" class="page-link">5</a></li>
+                    <li class="page-item"><a href="#" class="page-link"><i class="fa fa-angle-double-right"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>        
+</div><br><br><br><br>
+<!-- vista general de enfermeras- fin -->
+
+
+<!-- vista general de paciente -->
+<div class="container">
+    <div class="table-responsive">
+        <div class="table-wrapper">
+            <div class="table-title">
+                <div class="row">
+                    <div class="col-sm-8"><h2>Vista general <b>paciente</b></h2></div>
+                    
+                </div>
+            </div>
+            <table class="table table-striped table-hover table-bordered">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Nambre <i class="fa fa-sort"></i></th>
+                        <th>Apellido</th>                                                    
+                        <th>Opciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>1</td>
+                        <td>Hugo </td>
+                        <td>Giron </td>                        
+                        <td>
+                            <a href="#" class="view" title="Ver" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>
+                            <a href="#" class="edit" title="Editar" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                            <a href="#" class="delete" title="Eliminar" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                        </td>
+                    </tr>
+                   
+                </tbody>
+            </table><br>
+            <div class="clearfix">
+                
+                <ul class="pagination">
+                    <li class="page-item disabled"><a href="#"><i class="fa fa-angle-double-left"></i></a></li>
+                    <li class="page-item active"><a href="#" class="page-link">1</a></li>
+                    <li class="page-item"><a href="#" class="page-link">2</a></li>
+                    <li class="page-item"><a href="#" class="page-link">3</a></li>
+                    <li class="page-item"><a href="#" class="page-link">4</a></li>
+                    <li class="page-item"><a href="#" class="page-link">5</a></li>
+                    <li class="page-item"><a href="#" class="page-link"><i class="fa fa-angle-double-right"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>        
+</div><br><br><br><br>
+<!-- vista general de paciente- fin -->
+
+<!-- vista general de medicamento -->
+<div class="container">
+    <div class="table-responsive">
+        <div class="table-wrapper">
+            <div class="table-title">
+                <div class="row">
+                    <div class="col-sm-8"><h2>Vista general <b>medicamentos</b></h2></div>
+                    
+                </div>
+            </div>
+            <table class="table table-striped table-hover table-bordered">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Nambre <i class="fa fa-sort"></i></th>
+                        <th>Cantidad</th>                                                    
+                        <th>Opciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>1</td>
+                        <td>ibuprofeno </td>
+                        <td>500 </td>                        
+                        <td>
+                            <a href="#" class="view" title="Ver" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>
+                            <a href="#" class="edit" title="Editar" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                            <a href="#" class="delete" title="Eliminar" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                        </td>
+                    </tr>
+                   
+                </tbody>
+            </table><br>
+            <div class="clearfix">
+                
+                <ul class="pagination">
+                    <li class="page-item disabled"><a href="#"><i class="fa fa-angle-double-left"></i></a></li>
+                    <li class="page-item active"><a href="#" class="page-link">1</a></li>
+                    <li class="page-item"><a href="#" class="page-link">2</a></li>
+                    <li class="page-item"><a href="#" class="page-link">3</a></li>
+                    <li class="page-item"><a href="#" class="page-link">4</a></li>
+                    <li class="page-item"><a href="#" class="page-link">5</a></li>
+                    <li class="page-item"><a href="#" class="page-link"><i class="fa fa-angle-double-right"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>        
+</div><br><br><br><br>
+            
+            <!-- vista general de medicamento fin -->
        
     <!--====== BACK TOP TOP PART START ======-->
 
@@ -227,6 +438,10 @@
 
     <!--====== PART ENDS ======-->
 
+
+
+
+    
 
 
 
