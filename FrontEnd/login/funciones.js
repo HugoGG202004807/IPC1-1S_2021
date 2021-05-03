@@ -63,7 +63,7 @@ function CrearPaciente(){
     .then(response => response.json())
     .then(
         result => {
-            console.log('Success:', result);
+            console.log('Success:', result);          
             nombre.value=''
             apellido.value=''
             nacimiento.value=''
@@ -88,7 +88,10 @@ function CrearPaciente(){
           }
     )
 
+//actulizar todos nuestros datos en tiempo real
+
 }
+
 
     
 
@@ -101,6 +104,9 @@ function IniciarSesion(){
     // Manejando la data
     .then(data => {
         console.log(data.nombre)
+        if(user.value=="admin" && pass.value=="1234"){
+            window.location.href='../inicio_admin.html'       
+        }
         if(data.nombre=="false"){
             alert('Verifique sus Credenciales')
             pass.value='';

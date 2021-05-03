@@ -113,9 +113,13 @@
                                 <div class="slider-content">
                                     <h1 class="title">Medicos</h1>
                                     <ul class="slider-btn rounded-buttons">
-                                        <li><a class="main-btn rounded-two" href="#">Seleccionar archivo</a></li>
-                                        <li><a class="main-btn rounded-two" href="#">Cargar Medicos</a></li>
+
+                                        <input type="file" id="carga" accept=".csv">
+                                        
+                                        <button onclick="cargar()" class="main-btn rounded-two"> <li><a class="main-btn rounded-two">Cargar Medicos</a></li></button>
+                                        
                                         <li><a class="main-btn rounded-two" href="#">Exportar medicos a pdf</a></li>
+                                        
                                     </ul>
                                 </div>
                             </div>
@@ -163,9 +167,11 @@
                                 <div class="slider-content">
                                     <h1 class="title">Pacientes</h1>                                    
                                     <ul class="slider-btn rounded-buttons">
-                                        <li><a class="main-btn rounded-two" href="#">Seleccionar archivo</a></li>
-                                        <li><a class="main-btn rounded-two" href="#">Cargar Pacientes</a></li>
-                                        <li><a class="main-btn rounded-two" href="#">Exportar pacientes a pdf</a></li>
+                                        <input type="file" id="carga" accept=".csv">
+                                        
+                                        <button onclick="cargar()" class="main-btn rounded-two"> <li><a class="main-btn rounded-two">Cargar Medicos</a></li></button>
+                                        
+                                        <li><a class="main-btn rounded-two" href="#">Exportar Pacientes a pdf</a></li>
                                     </ul>
                                 </div> <!-- slider-content -->
                             </div>
